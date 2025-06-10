@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+    box-shadow: none !important;
+    
+}
+body{
+    overflow-y: auto;
+    overflow-x:hidden;
+    background-color: #F7F3EB;
+
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 0px;
+  
+}
+.cuisine-text{
+    font-size: 10px;
+}
+
+.section1, .section2, .section3, .section4{
+    position: relative;
+    width: 100vw;
+    height:fit-content;
+    /* padding-bottom: 10px; */
+    /* border-bottom:1px solid black; */
+}
+
+.plot1{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.section1 .title{
+
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+
+    width: 100vw;
+    color: black;
+    font-family: "Courier New";
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.plot1 text{
+    mix-blend-mode: overlay;
+    font-size: 10px;
+    font-family: Futura;
+}
+.tooltip{
+    position: absolute;
+    z-index: 5;
+    color: black;
+    font-size: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+.plot2 .tooltip{
+    font-size: 7px;
+    position: absolute;
+    font-family: 'Futura';
+    text-transform: uppercase;
+    
+    letter-spacing: 2px;
+    font-weight: medium;
+    color: white;
+    background-color: black;
+    width: fit-content !important;
+    padding: 4px;
+    height: 15px;
+    left: 250px;
+    transform: translate(-50%, -5);
+}
+
+.review-preview-box{
+    width: 200px;
+    height: 400px;
+  
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    padding-top: 40px;
+    background-color: black;
+    color: white;
+    overflow-y:scroll;
+    
+}
+h2{
+
+   color: #d2db76;
+  color:#ffc3cc;
+  color:#eba3b9;
+  color:#f8edd8;
+  color:#ff4e20;
+  color:#aacdfe;
+color:#bae7aa;
+color:#2225d8;
+color:#d8d81e;
+  color:#b5e1e2;
+  color:#e1d6fc;
+  color:#583f30;
+
+}
+
+.review-preview-box h3{
+    margin:0px;
+    background-color: black;
+    font-size: 10px;
+    font-family: Futura;
+    position: absolute;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+    top: 0px;
+}
+.plot2{
+    display: flex;
+}
+.plot2 .title{
+    position: absolute;
+    font-family: "Courier New";
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    z-index: 5;
+    top: 30px;
+    padding: 10px;
+
+}
+
+
+
+.review{
+    width: 100%;
+    font-size: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    height: fit-content;
+    padding:10px 0px;
+    border-bottom: 1px solid white;
+    
+}
+.review strong{
+    background-color: white;
+    font-weight: normal;
+    color: black
+
+}
+
+
+
+.leaflet-container .leaflet-tile-pane {
+    font-family: Futura PT;
+
+}
+
+.leaflet-container{
+    position: absolute;
+    overflow: hidden;
+}
+
+.time-marker{
+    position: absolute;
+    font-size: 9px;
+    letter-spacing: 3px;
+    font-family: Futura;
+    top: 20px;
+    right: 10px;
+    z-index: 20;
+    background-color: black;
+    padding: 9px;
+    padding-left: 11px;
+    text-wrap:nowrap;
+    display: flex;
+    text-transform: uppercase;
+    width: 130px;
+}
+.dial-container{
+    /* background-color: pink; */
+    z-index:20;
+    overflow:visible;
+    position: absolute;
+
+}
+.leaflet-bottom{
+    display:none;
+}
+
+
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out, .leaflet-control-button {
+    /* background-color: inherit !important; */
+    border-radius: 20px !important;
+    /* color: white !important; */
+    font-size: 13px !important;
+    height: 30px !important;
+    min-width: 20px !important;
+    line-height: 25px !important;
+    border-bottom: 1px solid white !important;
+    border: .5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+
+.leaflet-control-button{
+    width:  60px;
+    font-size: 8px !important;
+    font-weight: 100;
+    letter-spacing: 2px;
+    
+}
+.leaflet-control-button:hover{
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.204) !important;
+}
+
+.leaflet-control-zoom-in:hover,
+.leaflet-control-zoom-out:hover {
+    /* background-color: black !important; */
+    border: 2px solid white;
+    border-bottom: 2px solid white !important;
+    box-shadow: none !important;
+}
+.leaflet-control-zoom{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border: none !important;
+    box-shadow: none;
+}
+
+.custom-marker{
+    opacity: .5;
+    border-radius: 100px;
+    mix-blend-mode: color-burn;
+}
+
+
+.pi-chart-text{
+    font-size: 10px;
+    color: white;
+}
+
+.plot4{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0px;
+    margin: 0px;
+    background-color: #F7F3EB;
+    position: absolute;
+}
+.plot4 .tooltip{
+    position: absolute;
+}
+
+.plot4 .sidebar{
+    /* border: 1px solid black; */
+    left:5px;
+    position: absolute;
+    overflow-y: hidden;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+
+.legend{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    overflow-y:auto;
+    gap: 5px;
+    flex-direction:column;
+    padding: 5px;
+    padding-top: 55px;
+}
+.sidebar h2{
+    position: absolute;
+    background-color:#F7F3EB;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-top:10px;
+    padding-left: 10px;
+    top: 0px;
+    left:0px;
+    width: 300px;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    border-bottom: 1px solid #583f30;
+    margin:0px;
+
+
+}
+.legend-entry{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    align-items: center;
+    padding: 2px;
+}
+.legend-entry h4{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: 10px;
+    color: #583f30;
+    
+}
+
+.plot4 .leaflet-control-zoom-in:hover,
+.plot4 .leaflet-control-zoom-out:hover,
+.plot4 a.leaflet-disabled,
+.plot4  .leaflet-bar a{
+    background-color: #F7F3EB !important;
+    border: 1px solid #583f30 !important;
+    border-bottom: 1px solid #583f30 !important;
+    box-shadow: none !important;
+}
+
