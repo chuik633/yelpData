@@ -1,5 +1,1 @@
-docs/data/yelp_dataset/business_reformatted.json filter=lfs diff=lfs merge=lfs -text
-docs/data/yelp_dataset/review_reformatted.json filter=lfs diff=lfs merge=lfs -text
-public/data/yelp_dataset/business_reformatted.json filter=lfs diff=lfs merge=lfs -text
-public/data/yelp_dataset/review_reformatted.json filter=lfs diff=lfs merge=lfs -text
-*.json filter=lfs diff=lfs merge=lfs -text
+
