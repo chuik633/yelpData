@@ -26,7 +26,7 @@ const cuisines = [
 ];
 const fetchBusinessData = async () => {
   const business_data = await d3
-    .json("/data/yelp_dataset/business_reformatted.json")
+    .json("./data/yelp_dataset/business_reformatted.json")
     .then((data) => {
       //parse the data
       let parsedData = data.map((d) => {
@@ -68,7 +68,7 @@ const fetchBusinessData = async () => {
 
 const fetchReviewData = async () => {
   const review_data = await d3.json(
-    "/data/yelp_dataset/review_reformatted.json"
+    "./data/yelp_dataset/review_reformatted.json"
   );
   console.log("REVIEW DATA LOADED:", review_data);
   return review_data;
